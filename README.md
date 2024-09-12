@@ -8,7 +8,7 @@ Essa linguagem define os componentes principais dos dados:
 * Classes
 * Skills
 * Campeões (ou personagens jogáveis)
-* 
+   
 As skills podem ter requisitos que precisam ser atendidos para poderem fazer parte do set de skills de um campeão
 Por exemplo, a skill "Bola de fogo" pode estar disponível somente para magos; Ou ainda, a Skill "Dash" só pode ser usada por campeões com velocidade maior que 10
 
