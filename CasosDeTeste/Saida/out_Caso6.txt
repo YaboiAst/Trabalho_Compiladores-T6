@@ -1,0 +1,2 @@
+Linha 15: Stat foca não foi declarado
+Linha 28: Skill skillTeste não foi declarada

@@ -1,0 +1,1 @@
+Linha 37: Skill skillTeste requere a classe programador -- Classe do campeão: artista

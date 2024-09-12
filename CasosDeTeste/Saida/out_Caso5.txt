@@ -1,0 +1,2 @@
+Linha 13: Classe artista não foi declarado
+Linha 29: Classe artista não foi declarado

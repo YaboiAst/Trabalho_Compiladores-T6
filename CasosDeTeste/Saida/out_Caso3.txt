@@ -1,0 +1,1 @@
+Linha 9: Classe artista já declarado anteriormente

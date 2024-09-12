@@ -1,0 +1,1 @@
+Linha 37: Skill skillTeste requere: 20 de velocidade -- stat do campeão: indefinido

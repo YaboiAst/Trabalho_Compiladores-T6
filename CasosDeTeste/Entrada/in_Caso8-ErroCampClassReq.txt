@@ -1,0 +1,43 @@
+DECLARE:
+  statdef constituicao;
+  statdef forca;
+  statdef velocidade;
+  
+  classdef programador;
+  classdef artista;
+END 
+  
+SKILLS
+  skilldef skillTeste
+    Require:
+      classe: programador
+      stats:
+        forca: 5
+      endstats
+    endRequire
+  
+    alcance: PONTO()
+    custo: 1
+    cooldown: 1
+  
+    DANO(10, RAIO(2))
+  endskilldef
+END
+
+CAMPEOES
+  champdef player : 
+    classe: musico
+    
+    stats:
+      constituicao: 10
+      forca: 10
+    endstats
+    
+    skills:
+      skill: skillTeste
+      skill: skillTeste
+      skill: skillTeste
+      skill: skillTeste
+    endskills
+  endchampdef
+END

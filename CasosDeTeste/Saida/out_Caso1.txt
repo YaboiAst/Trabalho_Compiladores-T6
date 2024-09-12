@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <declare>
+      <statdef> constituicao </statdef>
+      <statdef> forca </statdef>
+      <statdef> velocidade </statdef>
+      <classdef> programador </classdef>
+      <classdef> artista </classdef>
+   </declare>
+
+   <skills>
+      <skill>
+         <name> skillTeste </name>
+         <alcance> PONTO() </alcance>
+         <custo> 1 </custo>
+         <cooldown> 1 </cooldown>
+         <acoes>
+            <dano>
+               <qtd> 10 </qtd>
+               <alcance> RAIO(2) </alcance>
+            </dano>
+         </acoes>
+      </skill>
+   </skills>
+
+   <campeoes>
+      <campeao>
+         <name> player </name>
+         <classe> programador </classe>
+         <champStats>
+            <constituicao> 10 </constituicao>
+            <forca> 10 </forca>
+         </champStats>
+         <champSkills>
+            <skill> skillTeste </skill>
+            <skill> skillTeste </skill>
+            <skill> skillTeste </skill>
+            <skill> skillTeste </skill>
+         </champSkills>
+      </campeao>
+   </campeoes>
+</root>
