@@ -1,5 +1,16 @@
-# **Compiladores - Analisador Semântico**
+# **Compiladores T6 - Compilador Dungeons And Devs**
 * Vitor Gabriel Orsin - 801575
+
+## Sobre a linguagem
+A linguagem lida pelo compilador foi desenvolvida para representar a criação dos dados usados pelo jogo Dungeons And Devs (desenvolvido pela Gamso)
+Essa linguagem define os componentes principais dos dados:
+* Stats
+* Classes
+* Skills
+* Campeões (ou personagens jogáveis)
+* 
+As skills podem ter requisitos que precisam ser atendidos para poderem fazer parte do set de skills de um campeão
+Por exemplo, a skill "Bola de fogo" pode estar disponível somente para magos; Ou ainda, a Skill "Dash" só pode ser usada por campeões com velocidade maior que 10
 
 ## Pré-requisitos
 Para conseguir executar corretamente o programa, verifique a versão do Java e do Maven na sua máquina:
