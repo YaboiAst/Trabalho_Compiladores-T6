@@ -30,7 +30,7 @@ java -jar target/t6-1.0-SNAPSHOT-jar-with-dependencies.jar Entrada/in_Caso8-Erro
 java -jar target/t6-1.0-SNAPSHOT-jar-with-dependencies.jar Entrada/in_Caso9-ErroCampStat.txt Saida/out_Caso9.txt
 
 # Caso 10
-java -jar target/t6-1.0-SNAPSHOT-jar-with-dependencies.jar CasosDeTeste/Entrada/in_Caso10-ErroCampSkillReq1.txt Saida/out_Caso10.txt
+java -jar target/t6-1.0-SNAPSHOT-jar-with-dependencies.jar Entrada/in_Caso10-ErroCampSkillReq1.txt Saida/out_Caso10.txt
 
 # Caso 11
 java -jar target/t6-1.0-SNAPSHOT-jar-with-dependencies.jar Entrada/in_Caso11-ErroCampSkillReq2.1.txt Saida/out_Caso11.txt
