@@ -36,7 +36,7 @@ chmod +x build.sh
 ./build.sh
 ```
 
-## Como usar
+## Modo de uso
 Utilize o java para executar o programa, passando os argumentos:
 * O caminho literal até o arquivo contendo o código em LA
 * O caminho literal até o arquivo onde o programa escreverá a saída

@@ -4,6 +4,21 @@ grammar DeD;
 fragment
 ESC_SEQ	: '\\\'' | '\\n';
 
+// DIRECOES
+DIRECOES: DIR_ABS | DIR_REL;
+DIR_ABS : 'norte' | 'sul' | 'leste' | 'oeste';
+DIR_REL : 'cima' | 'baixo' | 'direita' | 'esqueda';
+
+// ALCANCE
+ALCANCE : ALCANCE_PONTO | ALCANCE_LINHA | ALCANCE_CRUZ | ALCANCE_RAIO;
+ALCANCE_PONTO : 'PONTO()';
+ALCANCE_LINHA : 'LINHA(' DIRECOES ',' NUM_INT ')';
+ALCANCE_CRUZ  : 'CRUZ(' NUM_INT ')';
+ALCANCE_RAIO  : 'RAIO(' NUM_INT ')';
+
+// STATUS
+TIPO_STATUS : 'queimando' | 'envenenado' | 'confuso' | 'paralisado';
+
 // Tipos de números
 NUM_INT	 : ('0'..'9')+ ;
 // Identificadores
@@ -21,23 +36,6 @@ CADEIA :  '"' (~( '"'|'\\' |'\n'|'\r')| ESC_SEQ)* '"' ;
 // Erros de comentário / cadeia sem fechamento
 COMENTARIO_ABERTO: '{' ~('\n'|'\r'|'{'|'}' )* '\r'? '\n'? ;
 CADEIA_ABERTA: '"' (~( '"'|'\\' |'\n'|'\r')| ESC_SEQ)* '\r'? '\n'? ;
-
-// DUNGEONS AND DEVS ---------------------------------------------------------------------------------------------------
-
-// DIRECOES
-DIRECOES: DIR_ABS | DIR_REL;
-DIR_ABS : 'norte' | 'sul' | 'leste' | 'oeste';
-DIR_REL : 'cima' | 'baixo' | 'direita' | 'esqueda';
-
-// ALCANCE
-ALCANCE : ALCANCE_PONTO | ALCANCE_LINHA | ALCANCE_CRUZ | ALCANCE_RAIO;
-ALCANCE_PONTO : 'PONTO()';
-ALCANCE_LINHA : 'LINHA(' DIRECOES ',' NUM_INT ')';
-ALCANCE_CRUZ  : 'CRUZ(' NUM_INT ')';
-ALCANCE_RAIO  : 'RAIO(' NUM_INT ')';
-
-// STATUS
-TIPO_STATUS : 'queimando' | 'envenenado' | 'confuso' | 'paralisado';
 
 // RAIZ
 programa: 'DECLARE:' (decl_stats_classes)* 'END'
